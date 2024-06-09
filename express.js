@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://127.0.0.1:27017/", {
+mongoose.connect("db_connection_string", {
   dbName: 'DB_Final',
 })
   .then(() => console.log("Database is connected."))
